@@ -26528,8 +26528,12 @@
 }
 
 @page {
-	size: letter;
-	margin: 0;
+	size: A4 portrait;
+  margin: 20mm 15mm;
+  bleed: 0;
+  @bottom-right {
+    content: "- page " counter(page) " -";
+  }
 }
 
 .pagedjs_sheet {
